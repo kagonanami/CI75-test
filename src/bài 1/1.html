@@ -8,20 +8,20 @@
   </head>
   <body>
     <script>
-      export const LargestMultiply = () => {
+      export const maxProduct = () => {
         const Arr = [2, 3, -5, -2, 4, 1000];
-        let initialMul = Arr[0] * Arr[1];
+        let initial = Arr[0] * Arr[1];
         let x = 0;
         for (let i = 0; i < Arr.length - 1; i++) {
-          let biggestMul = Arr[i] * Arr[i + 1];
-          if (initialMul > biggestMul) {
-            x = initialMul;
+          let biggest = Arr[i] * Arr[i + 1];
+          if (initial > biggest) {
+            x = initial;
           } else {
-            x = biggestMul;
-            initialMul = biggestMul;
+            x = biggest;
+            initial = biggest;
           }
         }
-        console.log("Tích to nhất bằng: " + x);
+        console.log("maxProduct: " + x);
       };
     </script>
   </body>
