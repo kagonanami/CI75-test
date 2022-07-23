@@ -75,4 +75,6 @@
   font-size: 1rem;
 }
 
-
+body {
+  background-color: rgb(94, 180, 180);
+}

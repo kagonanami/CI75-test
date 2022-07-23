@@ -1,11 +1,11 @@
-import React, {useState} from 'react';
+import { useState } from "react"
 
-const InputShortener = ({setInputValue}) => {
-  const [value, setValue] = useState('')
-  
+const InputShortener = ({ setInputValue }) => {
+  const [value, setValue] = useState("");
+
   const handleClick = () => {
-    setInputValue(value)
-    setValue('')
+    setInputValue(value);
+    setValue("");
   }
 
   return (
